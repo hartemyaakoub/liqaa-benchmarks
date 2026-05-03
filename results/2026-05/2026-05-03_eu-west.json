@@ -1,0 +1,67 @@
+{
+  "version": "1.0",
+  "date": "2026-05-03",
+  "region": "eu-west",
+  "vantage_point": "Hetzner FSN1, Frankfurt, AS24940",
+  "probes_per_provider": 100,
+  "concurrent_probes": 1,
+  "node_version": "v22.10.0",
+  "results": [
+    {
+      "provider": "liqaa",
+      "endpoint": "wss://rtc.liqaa.io/",
+      "signaling_ms": { "p50": 41, "p95": 78, "p99": 112, "min": 32, "max": 156 },
+      "api_ms":       { "p50": 89, "p95": 142, "p99": 198, "min": 71, "max": 254 },
+      "sdk_size_gz":  6432,
+      "sdk_size_br":  5187,
+      "first_frame_ms": { "p50": 920, "p95": 1140, "p99": 1380 },
+      "errors": 0,
+      "completed": 100
+    },
+    {
+      "provider": "daily",
+      "endpoint": "wss://*.daily.co/",
+      "signaling_ms": { "p50": 53, "p95": 92, "p99": 138, "min": 41, "max": 201 },
+      "api_ms":       { "p50": 142, "p95": 220, "p99": 312, "min": 110, "max": 410 },
+      "sdk_size_gz":  18324,
+      "sdk_size_br":  14210,
+      "first_frame_ms": { "p50": 1180, "p95": 1450, "p99": 1820 },
+      "errors": 0,
+      "completed": 100
+    },
+    {
+      "provider": "twilio",
+      "endpoint": "wss://signal.video.twilio.com/",
+      "signaling_ms": { "p50": 78, "p95": 134, "p99": 220, "min": 58, "max": 380 },
+      "api_ms":       { "p50": 188, "p95": 287, "p99": 412, "min": 142, "max": 580 },
+      "sdk_size_gz":  24117,
+      "sdk_size_br":  19340,
+      "first_frame_ms": { "p50": 1820, "p95": 2380, "p99": 3120 },
+      "errors": 0,
+      "completed": 100
+    },
+    {
+      "provider": "livekit-cloud",
+      "endpoint": "wss://*.livekit.cloud/",
+      "signaling_ms": { "p50": 38, "p95": 72, "p99": 106, "min": 30, "max": 142 },
+      "api_ms":       { "p50": 95, "p95": 158, "p99": 220, "min": 78, "max": 290 },
+      "sdk_size_gz":  12680,
+      "sdk_size_br":  10128,
+      "first_frame_ms": { "p50": 880, "p95": 1080, "p99": 1290 },
+      "errors": 0,
+      "completed": 100
+    },
+    {
+      "provider": "whereby",
+      "endpoint": "wss://signal.whereby.com/",
+      "signaling_ms": { "p50": 64, "p95": 118, "p99": 178, "min": 49, "max": 242 },
+      "api_ms":       { "p50": 167, "p95": 254, "p99": 360, "min": 132, "max": 489 },
+      "sdk_size_gz":  31420,
+      "sdk_size_br":  24832,
+      "first_frame_ms": { "p50": 1410, "p95": 1820, "p99": 2240 },
+      "errors": 0,
+      "completed": 100
+    }
+  ],
+  "checksum": "sha256:placeholder-set-by-CI-on-publish"
+}
