@@ -19,11 +19,11 @@ The video API space is full of "we're 10x faster" marketing claims with **zero p
 
 This repo:
 
-- 📊 **Publishes raw probe data** (CSV + JSON) — you can verify our claims byte-by-byte
-- 🔁 **Is reproducible** — clone the repo, run `node bench/run.mjs`, get your own numbers
-- 🌍 **Probes from multiple regions** — Frankfurt, Algiers, Singapore, São Paulo
-- ⏱ **Runs continuously** — weekly cron via GitHub Actions
-- 📋 **Documents every change** — methodology versioned in `methodology.md`
+- **Publishes raw probe data** (CSV + JSON) — you can verify our claims byte-by-byte
+- **Is reproducible** — clone the repo, run `node bench/run.mjs`, get your own numbers
+- **Probes from multiple regions** — Frankfurt, Algiers, Singapore, São Paulo
+- **Runs continuously** — weekly cron via GitHub Actions
+- **Documents every change** — methodology versioned in `methodology.md`
 
 ## What we measure
 
@@ -40,15 +40,15 @@ This repo:
 > Last full run: **2026-05-03** · Frankfurt (EU)
 > Each provider: 100 sequential probes · ~2 min per provider.
 
-| Provider              | Signaling p50 | API p50  | SDK gz | First-frame p50 |
+| Provider | Signaling p50 | API p50 | SDK gz | First-frame p50 |
 | --------------------- | ------------- | -------- | ------ | --------------- |
-| **LIQAA**             | **41 ms**     | **89 ms** | **6.4 KB** | **920 ms**     |
-| Daily.co              | 53 ms         | 142 ms   | 18 KB  | 1.2 s           |
-| Twilio Programmable   | 78 ms         | 188 ms   | 24 KB  | 1.8 s           |
-| LiveKit Cloud         | 38 ms         | 95 ms    | 12 KB  | 880 ms          |
-| Whereby               | 64 ms         | 167 ms   | 31 KB  | 1.4 s           |
+| **LIQAA** | **41 ms** | **89 ms** | **6.4 KB** | **920 ms** |
+| Daily.co | 53 ms | 142 ms | 18 KB | 1.2 s |
+| Twilio Programmable | 78 ms | 188 ms | 24 KB | 1.8 s |
+| LiveKit Cloud | 38 ms | 95 ms | 12 KB | 880 ms |
+| Whereby | 64 ms | 167 ms | 31 KB | 1.4 s |
 
-> ⚠️ **Numbers will move.** Re-run the benchmark after major releases. The whole point of this repo is reproducibility — don't trust this table; trust your own run.
+> **Numbers will move.** Re-run the benchmark after major releases. The whole point of this repo is reproducibility — don't trust this table; trust your own run.
 
 [See full results](./results) · [See methodology](./methodology.md)
 
